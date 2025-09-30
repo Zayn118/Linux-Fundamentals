@@ -31,7 +31,14 @@ Linux is a free and open-source operating system kernel that powers millions of 
 ## Basic Linux Concepts
 
 ### The Shell
-The shell is a command-line interface that allows you to interact with the Linux system. The most common shell is **Bash** (Bourne Again Shell).
+The shell is a command-line interface that allows you to interact with the Linux system. The most common shell is **Bash** (Bourne Again Shell). Alternatives: `zsh`, `fish`, `ksh`.
+
+My favourite shell was zsh, due to its powerful features, such as tab completion via a menu, and how easily customizable it is, with plug-ins such as Oh-My-Zsh! 
+I installed this with the following command:
+ ```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+I recommend going for a custom theme such as Powerlevel10k, which had a really clean look, and you could choose how verbose you wanted the information the shell provides you to be.
 
 ### Terminal
 A terminal (or terminal emulator) is an application that provides access to the shell.
@@ -82,6 +89,12 @@ pwd
 ```bash
 ls
 ```
+
+### List Command History
+```bash
+history
+```
+Use `!!` to grab the last command or `!` with its number from the command history
 
 ### Clear the Screen
 ```bash
